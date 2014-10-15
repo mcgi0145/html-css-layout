@@ -1,0 +1,91 @@
+body{
+border: 1px solid purple;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+header, footer {
+   background: orange;
+    text-align: center;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+.cleafix {
+    display: inline-block;
+}
+
+/* -- column 2 styles -- */
+
+.col-2{
+    margin: 4rem 0;
+    background: green;
+}
+
+@media all and (min-width:600px) {
+   .col-2{
+       width: 47%;
+       float: left;
+       margin-left: 6%;
+   }
+    .col-2:first-child{
+        margin-left: 0;
+    }
+}
+
+/* -- column 3 styles -- */
+
+.col-3{
+    margin: 4rem 0;
+    background: brown;
+}
+@media all and (min-width:600px) {
+   .col-3{
+       width: 29.33%;
+       float: left;
+       margin-left: 6%;
+   }
+    .col-3:first-child{
+     margin-left: 0;   
+    }
+}
+
+
+
+.col-4{
+ margin: 4rem 0;
+padding: 1rem;
+    background: purple;
+    
+}
+
+@media all and (min-width:600px) {
+   .col-4{
+       width: 15.134%;
+       float: left;
+       margin-left: 6%;
+   }
+    .col-4:first-child{
+     margin-left: 0;   
+    }
+}
+
