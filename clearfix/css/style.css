@@ -1,4 +1,45 @@
-.body{
-    
-border: 1px solid red;
+body{
+border: 1px solid purple;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+header, footer {
+   background: orange;
+    text-align: center;
+}
+
+.col-2{
+    margin: 5rem 0;
+}
+
+@media all and (min-width:600px) {
+   .col-2{
+       width: 50%;
+       float: left;
+   }
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+.cleafix {
+    display: inline-block;
 }
